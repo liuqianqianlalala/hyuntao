@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>注册</title>
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../js/register.js" ></script>
+</head>
+<body>
+	<div class="register_content main">
+		<div class="logo"></div>
+		<div class="word">
+			<a href="">企业注册</a>
+		</div>
+	</div>
+	<div class="register_main main">
+		<div class="re_padding">
+			<div class="re_title">
+				<div class="re_phone re_table">手机注册
+					</div>
+				<div class="re_email re_table">邮箱注册
+					
+				</div>
+				<div class="re_right">我已注册，现在就<a href="login.html">登录</a></div>
+			</div>
+			<!--手机注册部分-->
+			<div class="phone_register choose" >
+				<div class="reg_col">
+					<span>用户名</span>
+					<input type="text" class="username"/>
+					<i class="user_info"></i>
+				</div>
+				<div class="reg_col">
+					<span>手机号</span>
+					<input type="text" class="input_phone"/>
+					<i class="phone_info"></i>
+				</div>
+				<div class="reg_col">
+					<span>图片验证码</span>
+					<input type="text" class="reg_img"/>
+					<div class="code_img"><img src="" class="code_img_con"></div>
+					<i class="code_info"></i>
+
+				</div>
+				<!-- <div class="reg_col">
+					<span>手机验证码</span>
+					<input type="text" class="reg_img" placeholder="接口要钱  任性不做" disabled/>
+					<div class="code_img get_code">获取验证码</div>
+					<i class="info"></i>
+
+				</div> -->
+				<div class="reg_col">
+					<span>设置密码</span>
+					<input type="password" class="set_pass" />
+					<i class="pass_info"></i>
+
+				</div>
+				<div class="reg_col">
+					<span>确认密码</span>
+					<input type="password" class="confi_pass"/>
+					<i class="confi_pass_info"></i>
+
+				</div>
+				<div class="read">
+					<input type="checkbox" checked="checked"/>
+					我已阅读并同意 《好云淘用户注册协议》
+				</div>
+				<div class="reg_col">
+					<span></span>
+					<input type="submit" value="注 册" class="reg_submit"/>
+					<i class="sub"></i>
+				</div>
+			</div>
+			<!--邮箱登录部分-->
+			<div class="email_register choose" style="display:none">
+				<div class="reg_col">
+					<span>邮箱</span>
+					<input type="text" class="input_phone"/>
+				</div>
+				<div class="reg_col">
+					<span>手机验证码</span>
+					<input type="text" class="reg_img"/>
+					<div class="code_img get_code">获取验证码</div>
+				</div>
+				<div class="reg_col">
+					<span>设置密码</span>
+					<input type="text" class="input_phone"/>
+				</div>
+				<div class="reg_col">
+					<span>确认密码</span>
+					<input type="text" class="input_phone"/>
+				</div>
+				<div class="read">
+					<input type="checkbox" checked="checked"/>
+					我已阅读并同意 《好云淘用户注册协议》
+				</div>
+				<div class="reg_col">
+					<span></span>
+					<input type="submit" value="注 册" class="reg_submit"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bigfooter"></div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+$red :#cf1e2c;
+.ad{
+	width: 1200px;
+    height: 70px;
+    position: relative;
+    padding-top: 5px;
+    .close{
+    	width: 15px;
+	    position: absolute;
+	    top: 20px;
+	    right: 10px;
+	    height: 15px;
+	    background: url(../images/icon.png);
+	    background-repeat: no-repeat;
+	    background-position: 0px -80px;
+    }
+}
+
+
+// 轮播图
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+// content
+.content{
+	    height: 255px;
+	    margin-top:-26px;
+	.content_left{
+	    height: 255px;
+	    float: left;
+	}
+	.content_center{
+		width: 618px;
+	    height: 255px;
+	    float: left;
+	    border-top: 1px solid #e5e5e5;
+	    border-left: 1px solid #e5e5e5;
+	    background-color: #fff;
+	    li{
+	    	width: 205px;
+		    height: 126px;
+		    float: left;
+		    border-right: 1px solid #e5e5e5;
+		    border-bottom: 1px solid #e5e5e5;
+	    }
+	}
+	.content_right{
+		width: 280px;
+	    height: 255px;
+	    float: left;
+	    margin-left: 0px;
+	}
+}
+.bigrecomm{
+	height: 212px;
+	overflow: hidden;
+	.re{
+		height: 50px;
+	    line-height: 50px;
+	    color: #333;
+	    font-size: 18px;
+	    overflow: hidden;
+	    font-weight: 700;
+	}
+	ul{
+		height: 163px;
+		width: 1200px;
+		overflow: hidden;
+		li{
+			width: 143px;
+		    height: 74px;
+		    padding: 3px;
+		    display: block;
+		    float: left;
+		    border-right: 1px solid #eeeeee;
+		    border-bottom: 1px solid #eeeeee;
+		    background-color: #fff;
+		    overflow:hidden;
+		    img{
+		    	width: 100%;
+    			height: 100%;
+		    }
+		}
+	}
+}

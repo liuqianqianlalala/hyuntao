@@ -1,0 +1,245 @@
+@charset "UTF-8";
+.goods_main {
+  overflow: hidden;
+}
+
+.title {
+  height: 30px;
+  font-size: 14px;
+  margin: 20px 0;
+}
+.title a {
+  color: #333;
+}
+
+.clearfix:before,
+.clearfix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 400px !important;
+  line-height: 0;
+  content: "";
+}
+
+.magnifier {
+  width: 1100px !important;
+  height: 470px !important;
+  position: relative;
+  border: 1px solid;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 1px solid #fff;
+  float: left;
+  overflow: hidden;
+}
+.magnifier .big_container {
+  width: 480px;
+  float: left;
+}
+.magnifier .big_container .attention {
+  width: 410px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 12px;
+  color: #a0a0a0;
+  background: url("../images/goods/1.jpg") no-repeat 155px center;
+}
+.magnifier .big_container .magnifier-container {
+  width: 400px !important;
+  height: 400px !important;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.magnifier .big_container .move-view {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: #333333;
+  opacity: 0.3;
+}
+.magnifier .big_container .images-cover {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.magnifier .big_container .images-cover img {
+  position: absolute;
+}
+.magnifier .big_container .magnifier-line {
+  position: relative;
+  width: 410px;
+}
+.magnifier .big_container .magnifier-line ul {
+  display: block;
+  font-size: 0;
+  width: 10000%;
+  position: absolute;
+  left: 0;
+  z-index: 9997;
+}
+.magnifier .big_container .magnifier-line li {
+  float: left;
+  width: 55px;
+  height: 55px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-right: 31px;
+}
+.magnifier .big_container .magnifier-line .last {
+  margin-right: 0;
+}
+.magnifier .big_container .magnifier-line ul > .active .small-img {
+  border-color: #bbb;
+}
+.magnifier .big_container .small-img {
+  height: 55px;
+  width: 55px;
+  overflow: hidden;
+  border: 1px solid #a0a0a0;
+  text-align: center;
+}
+.magnifier .big_container .small-img img {
+  max-width: 55px;
+  max-height: 55px;
+}
+.magnifier .big_container .magnifier-view {
+  width: 434px !important;
+  height: 400px !important;
+  border: 1px solid #969896;
+  position: absolute;
+  left: 522px;
+  top: 10px;
+  z-index: 9999;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+.magnifier .big_container .magnifier-view img {
+  display: block;
+}
+
+.goods_middle {
+  position: absolute;
+  left: 500px;
+  width: 455px;
+}
+.goods_middle .goos_middle_title {
+  width: 100%;
+  font-size: 16px;
+  color: #000;
+  padding-bottom: 5px;
+}
+.goods_middle .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #cf1e2c;
+  margin: 10px 10px 10px 0;
+  display: inline-block;
+}
+.goods_middle .market_pri {
+  font-size: 12px;
+  color: #666;
+}
+.goods_middle .sma {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #333333;
+  border: 1px solid #888888;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+.goods_middle .number {
+  width: 48px;
+  height: 26px;
+  margin: 0 5px;
+  text-align: center;
+  border: 1px solid #888888;
+}
+.goods_middle .buy_box {
+  margin-top: 20px;
+}
+.goods_middle .buy {
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background: #ff6000;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 5px;
+  position: relative;
+  margin: 0 18px 10px 0;
+  border-radius: 5px;
+}
+.goods_middle .add_car {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background: #cf1e2c;
+  color: #fff;
+  font-size: 18px;
+  padding: 0 15px 0 50px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.goods_middle .add_car_icon {
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-position: -120px -720px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.goods_middle .bo_info {
+  margin-top: 20px;
+}
+.goods_middle .bo_info a {
+  color: #005aa0;
+  padding: 2px 40px 2px 25px;
+  position: relative;
+  float: left;
+}
+.goods_middle .bo_info .go {
+  width: 17px;
+  height: 17px;
+  background: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-position: -240px -760px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  text-align: center;
+  line-height: 17px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "宋体";
+}
+.goods_middle .bo_info .seven {
+  width: 17px;
+  height: 17px;
+  background: url(../images/icon.png);
+  background-repeat: no-repeat;
+  background-position: -240px -760px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  text-align: center;
+  line-height: 17px;
+  color: #fff;
+  font-size: 12px;
+  font-family: "宋体";
+}
+
+/*# sourceMappingURL=good.css.map */

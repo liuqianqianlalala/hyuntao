@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/top.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/right_nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.cookie.js"></script>
+	<script src="../lib/arttemplate/template.js"></script>	
+	<script src="../js/common.js"></script>
+	<script src="../js/cart.js"></script>
+	<style type="text/css">
+		._title, .cart_body, .row {clear: both;}
+		._title div, .row div {width:150px; height: 50px; line-height: 50px; border: 1px solid; float: left; overflow: hidden;text-align: center;}
+		.row .add, .row .minus {
+			width:20px;
+			height:20px;
+			line-height: 20px;
+			display: inline-block;
+			border:1px solid;
+			text-align: center;
+			cursor: pointer;
+		}
+		.cart_car{
+			margin: 20px 0;
+			font-size: 22px;
+		}
+		.car_con{
+			font-size: 14px;
+		}
+		input{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="bigheader"></div>
+	<div class="top"></div>
+	<div class="bignav"></div>
+	<!-- 右侧固定导航条 -->
+	<div class="right_sider"></div>
+	<div class="car_con main">
+		<div class="cart_car">购物车</div>
+		<div class="_title">
+			<div><label><input type="checkbox" id="ck_all">全选</label></div>
+			<div>标题</div>
+			<div>价格</div>
+			<div>数量</div>
+			<div>小计</div>
+			<div>操作</div>
+		</div>
+		<div class="cart_body">
+			空
+		</div>
+		<div style="clear: both;">
+			合计：<span class="total">0.00</span> 元
+		</div>
+		<div>
+			<a href="confirm.html">确认订单</a>
+		</div>
+	</div>
+	
+	<!-- 尾部 -->
+	<div class="bigfooter"></div>
+
+	<!-- 购物车商品显示模板 -->
+	<script type="text/html" id="cart_template">
+		{{each products as prod i}}
+		<div class="row">
+			<div><input type="checkbox" class="ck_prod"></div>
+			<div style="display: none;" class="id">{{prod.id}}</div>
+			<div title="{{prod.title}}" class="title">{{prod.title}}</div>
+			<div class="price">{{prod.price}}</div>
+			<div><span class="minus">-</span><input type="text" size="1" value="{{prod.amount}}" class="amount"><span class="add">+</span></div>
+			<div class="sub">{{prod.price*prod.amount}}</div>
+			<div><a href="javascript:void(0);" class="del">删除</a></div>
+		</div>
+		{{/each}}
+	</script>
+</body>
+</html>

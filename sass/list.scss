@@ -1,0 +1,233 @@
+.list_main{
+	overflow: hidden;
+	.list_left{
+		width: 198px;
+	    border: 1px solid #ddd;
+	    margin-bottom: 20px;
+	    float: left;
+	    div{
+	    	width: 168px;
+		    line-height: 35px;
+		    padding: 0 15px;
+		    border-bottom: 1px solid #ddd;
+		    background: #f8f8f8;
+		    font-size: 14px;
+		    color: #666;
+		    position: relative;
+		    cursor: pointer;
+		    &:hover{
+		    	color: #cf1e2c;
+		    }
+	    }
+	}
+	.list_center{
+		 float: left;
+		 width: 980px;
+		 margin-left: 20px;
+		.list_center_nav{
+			width:100%;
+		    height: 36px;
+		    border: 1px solid #ddd;
+		    background: #f8f8f8;
+		    position: relative;
+		    line-height: 36px;   
+		    ul{
+		    	li{
+					width: 29px;
+				    height: 36px;
+				    float: left;
+				    line-height: 36px;
+				    border-right: 1px solid #ddd;
+				    padding: 0 15px;
+				    color: #333;
+				    font-size: 14px;
+				    position: relative;
+				    cursor: pointer;
+				    &:hover{
+				    	background: #cf1e2c;
+				    	color: #fff;
+				    }
+		    	}
+		    }
+		}
+		.list_center_main{
+			width: 100%;
+			height: 500px;
+		    // border: 1px solid #ddd;
+			border-top: 0;
+			margin-top: 20px;	    	
+		}
+	}
+}
+.template{
+	width: 243px;
+    height: 390px;
+    float: left;
+    position: relative;
+	border: 1px solid #ddd;
+	.list_center_box{
+		width: 213px;
+	    height: 340px;
+	    padding: 15px;
+	    border: 1px solid transparent;
+	    overflow: hidden;
+	    .list_center_box_img{
+	    	width: 220px;
+		    height: 220px;
+		    position: relative;
+		    img{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+		    // background: url(../images/list/1.jpg) no-repeat;
+		    // background-position: 100% 100%;
+		    // background-size: cover;
+	    }
+	    .list_center_box_titl{
+	    	width: 100%;
+		    height: 40px;
+		    margin: 10px 0;
+		    overflow: hidden;
+		    font-size: 12px;
+	    }
+	    .list_center_box_price{
+	    	width: 100%;
+				height: 35px;
+				span{
+					font-size: 16px;
+			    color: #cf1e2c;
+			    // float: left;
+			    margin-right: 15px;
+				}
+				del{
+					float: right;
+				}
+	    }
+	    .list_center_box_buy{
+	    	width: 226px;
+		    height: 40px;
+		    overflow: hidden;
+		    a{
+		    	&:hover{
+		    		background: #cf1e2c;
+	    			color: #fff; 
+		    	}
+		    }
+		    .bu{
+		    	padding: 0 20px;
+			    border: 1px solid #ccc;
+			    display: block;
+			    float: left;
+			    line-height: 30px;
+			    color: #666;
+			    margin-right: 30px;
+			    position: relative;
+			    
+		    }
+		    .collect{
+				padding: 0 20px 0 50px;
+			    line-height: 30px;
+			    display: block;
+			    float: left;
+			    border: 1px solid #ddd;
+			    position: relative;
+			    color: #333;
+			    .collect_icon{
+			    	width: 20px;
+				    height: 22px;
+				    background: url(../images/icon.png) no-repeat;
+				    background-position: -80px -435px;
+				    position: absolute;
+				    top: 2px;
+				    left: 25px;
+			    }
+		    }
+	    }
+	 }
+
+}
+.box{
+	width: 243px;
+    height: 390px;
+    float: left;
+    position: relative;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	.list_center_box{
+		width: 213px;
+	    height: 340px;
+	    padding: 15px;
+	    border: 1px solid transparent;
+	    overflow: hidden;
+	    .list_center_box_img{
+	    	width: 220px;
+		    height: 220px;
+		    position: relative;
+		    img{
+		    	width: 100%;
+		    	height: 100%;
+		    }
+	    }
+	    .list_center_box_titl{
+	    	width: 100%;
+		    height: 40px;
+		    margin: 10px 0;
+		    overflow: hidden;
+		    font-size: 12px;
+	    }
+	    .list_center_box_price{
+	    	width: 100%;
+				height: 35px;
+				span{
+					font-size: 16px;
+			    color: #cf1e2c;
+			    // float: left;
+			    margin-right: 15px;
+				}
+				del{
+					float: right;
+				}
+	    }
+	    .list_center_box_buy{
+	    	width: 226px;
+		    height: 40px;
+		    overflow: hidden;
+		    a{
+		    	&:hover{
+		    		background: #cf1e2c;
+	    			color: #fff; 
+		    	}
+		    }
+		    .bu{
+		    	padding: 0 20px;
+			    border: 1px solid #ccc;
+			    display: block;
+			    float: left;
+			    line-height: 30px;
+			    color: #666;
+			    margin-right: 10px;
+			    position: relative;
+			    
+		    }
+		    .collect{
+				padding: 0 20px 0 50px;
+			    line-height: 30px;
+			    display: block;
+			    float: left;
+			    border: 1px solid #ddd;
+			    position: relative;
+			    color: #333;
+			    .collect_icon{
+			    	width: 20px;
+				    height: 22px;
+				    background: url(../images/icon.png) no-repeat;
+				    background-position: -80px -435px;
+				    position: absolute;
+				    top: 2px;
+				    left: 25px;
+			    }
+		    }
+	    }
+	 }
+
+}

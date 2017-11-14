@@ -1,0 +1,136 @@
+.register_content {
+  height: 46px; }
+  .register_content .logo {
+    width: 225px;
+    height: 46px;
+    background: url(../images/logo.png);
+    margin-top: 20px;
+    float: left; }
+  .register_content .word {
+    float: right;
+    width: 110px;
+    height: 45px;
+    background: #D50000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px; }
+    .register_content .word a {
+      width: 110px;
+      height: 45px;
+      display: block;
+      text-decoration: none;
+      color: #fff; }
+
+.register_main {
+  width: 1200px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #666;
+  overflow: hidden; }
+  .register_main .re_padding {
+    display: block;
+    padding: 30px 90px;
+    font-size: 14px; }
+    .register_main .re_padding .re_title {
+      width: 100%;
+      height: 40px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 50px; }
+      .register_main .re_padding .re_title .re_phone {
+        background: #363636;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        position: relative; }
+        .register_main .re_padding .re_title .re_phone:after {
+          content: "";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          left: 50%;
+          bottom: -10px;
+          margin-left: -5px;
+          background: url(../images/icon.png) no-repeat 0 -560px; }
+      .register_main .re_padding .re_title .re_right {
+        width: 145px;
+        height: 40px;
+        line-height: 40px;
+        float: right;
+        font-size: 12px; }
+        .register_main .re_padding .re_title .re_right a {
+          color: #005aa0;
+          text-decoration: none; }
+    .register_main .re_padding .re_email {
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #333;
+      float: left; }
+    .register_main .re_padding .re_table {
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #333;
+      float: left;
+      cursor: pointer; }
+    .register_main .re_padding .reg_col {
+      display: block;
+      height: 40px;
+      width: 100%;
+      margin: 20px 0;
+      line-height: 40px; }
+      .register_main .re_padding .reg_col i {
+        position: absolute;
+        left: 840px; }
+      .register_main .re_padding .reg_col span {
+        display: block;
+        width: 360px;
+        text-align: right;
+        height: 40px;
+        line-height: 40px;
+        float: left; }
+      .register_main .re_padding .reg_col input {
+        display: block;
+        float: left;
+        width: 330px;
+        height: 38px;
+        line-height: 38px\9;
+        border: 1px solid #ccc;
+        margin-left: 16px;
+        text-indent: 0.3em; }
+      .register_main .re_padding .reg_col .reg_img {
+        width: 208px; }
+      .register_main .re_padding .reg_col .code_img {
+        display: block;
+        width: 100px;
+        height: 38px;
+        border: 1px solid #ccc;
+        line-height: 38px;
+        text-align: center;
+        float: left;
+        margin-left: 20px;
+        text-decoration: none;
+        background: #eee;
+        cursor: pointer; }
+    .register_main .re_padding .read {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto; }
+      .register_main .re_padding .read input {
+        margin-right: 5px; }
+    .register_main .re_padding .reg_submit {
+      border: none;
+      height: 45px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #cf1e2c;
+      color: #fff;
+      text-align: center; }
+
+/*# sourceMappingURL=register.css.map */

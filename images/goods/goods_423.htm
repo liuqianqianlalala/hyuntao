@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+<meta name="keywords" content="网上购物,网上商城,老字号商品,非物质文化遗产商品,非遗,电商,好云淘,云淘,放心食品,良心企业,品质商品,异珍源猕猴桃,巴山土猪,桑椹酒,质量,有机食品,欧盟认证商品,哪里买四川特产,四川特产,地方特产,品质生活,好运淘" />
+<meta name="description" content="好云淘 -农特产品购物网上商城，汇集众多“中华老字号” 及“非物质文化遗产”保护产品，为用户提供极具品质的“绿色食品”，让你便捷感受品质生活。400-080-8930" />
+<meta name="generator" content="" />
+<meta name="author" content=""/>
+<meta name="copyright" content=""/>
+<link rel="shortcut icon" href="http://www.hyuntao.com/favicon.ico" type='image/x-icon'>
+<link rel="stylesheet" href="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/css/all.css"/>
+<script type="text/javascript">var path='http://www.hyuntao.com';</script>
+<script src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/js/jquery-1.11.1.min.js"></script>
+<script src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/js/device.js"></script>
+<script src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/js/hyt_set.js"></script>
+<script src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/js/jquery.shop.common.js"></script>
+<script type="text/javascript">
+    /*暂时取消load*/
+    /*$(document).ajaxStart(function(){
+        TGOGO.settings.loadShow();
+    });
+    $(document).ajaxSuccess(function(){
+        TGOGO.settings.loadHide();
+    });
+    $(document).ajaxError(function(){
+        TGOGO.settings.loadHide();
+    });*/
+    
+</script>
+	<link rel="stylesheet" href="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/css/common_product_list_show.css"/>
+	<link rel="stylesheet" href="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/css/product_property.css" />
+	<link rel="stylesheet" href="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/css/product_details.css"/>
+	<title>山霸王 通江 椴木银耳 干货 特级 65g - 好云淘官网 — 淘品质生活|地方特产|中华老字号|绿色食品</title>
+	<script src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/js/jquery.validate.min.js"></script>
+	<script src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/js/jquery-ui-1.8.21.js"></script>
+	<!-- 该段JS移至common_item_detail_prop.html -->
+	<script type="text/javascript">
+		var goods_inventory_detail='[]';
+	</script>
+</head>
+<body>
+<div>
+<!--广告关闭js-->
+<script>	
+	$(function(){
+		var obj = $("#header_banner");
+		obj.find(".ad_close").click(function(){
+			obj.remove();
+		});
+	});
+</script>
+<div class="header">
+    <div class="header_body">
+        <!--收藏===-->
+        <div class="header_left">
+            <span class="header_left_collect"></span>
+            <a class="__TGOGO__"
+                data-type="addFavorite"
+                data-title="好云淘"
+                data-url="http://www.hyuntao.com"
+            >收藏好云淘
+    </a>
+            <!--<span class="header_left_order"></span>-->
+            <!--<a href="#">手机下单更优惠</a>-->
+        </div>
+        <!--个人中心＝＝＝-->
+        <div class="header_list">
+            <ul>
+                <li class="header_list_a"><a href="http://www.hyuntao.com/user/login.htm" class="lightblue">[登录]</a>&nbsp;&nbsp;&nbsp;<a href="http://www.hyuntao.com/register.htm" class="lightblue">[注册]</a>                
+                <li class="header_list_a"><a href="http://www.hyuntao.com/buyer/index.htm">个人中心</a></li>
+                <li class="header_list_a border"><a href="http://www.hyuntao.com/buyer/order.htm">我的订单</a></li>
+                <!-- <li class="header_list_a"><a href="#">服务中心</a></li>
+                <li class="header_list_a"><a href="#">分享返利</a></li> -->
+                <!-- <li class="header_list_a border color"><a href="http://www.hyuntao.com/seller/company_register.htm">企业进驻</a></li> -->
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="top_height"></div>
+<script>
+
+// 搜索
+function search_form(){
+	  var keyword=arguments[0];
+	  var type=arguments[1];
+	  if(keyword!=""&&keyword!=undefined){
+	   jQuery("#keyword").val(keyword);
+	   jQuery("#searchForm").attr("target","_blank")
+	  }else{
+          keyword = jQuery("#keyword").val();
+
+          keyword = removeHTMLTag(keyword);
+          jQuery("#keyword").val(keyword);
+		  jQuery("#searchForm").removeAttr("target");
+	  }
+	  if(type!=""&&type!=undefined){
+	    jQuery("#type").val(type);
+	  }
+	  jQuery("#searchForm").submit();	
+	  
+}
+
+// top订单跟踪
+function get_sho_top_order(){
+	 jQuery.post("http://www.hyuntao.com/get_top_order.htm",function(data){
+		    jQuery("#top_order_id").text("订单号:"+data.order_id);
+		    jQuery("#top_order_id").after("<a class='order_follow_title_right' id='top_order_details_a'>查看更多>></a>");
+		    jQuery("#top_order_img").html("");
+		    $(data.goodsImg).each(function(index,element){
+		    	var html = ' <a href="javascript:void(0)" class="order_follow_hover_img"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/'+element+'"></a>'
+		    	jQuery("#top_order_img").append(html);
+		    });
+		    jQuery("#top_order_img").append('<div class="clear"></div>');
+		    jQuery("#top_order_details_a").attr("href","http://www.hyuntao.com/buyer/order_view.htm?id="+data.id);
+		    var order_status = "";
+		    if(data.order_status==0){
+		    	order_status = "已取消";
+		    }
+		    else if(data.order_status==10){
+		    	order_status = "待付款";
+		    }
+		    else if(data.order_status==15){
+		    	order_status = "线下支付待审核";
+		    }
+		    else if(data.order_status==20){
+		    	order_status = "付款成功";
+		    }
+		    else if(data.order_status==30){
+		    	order_status = "已发货";
+		    }
+		    else if(data.order_status==40){
+		    	order_status = "已收货";
+		    }
+		    else if(data.order_status==50){
+		    	order_status = "已完成,已评价";
+		    }
+		    else if(data.order_status==60){
+		    	order_status = "已结束";
+		    }
+		    jQuery("#top_order_status").html(order_status);
+		    
+		    jQuery("#top_order_transInfo").html("");
+		    if(data.transInfo!=null){
+			    jQuery("#order_follow_hover").css("display","block"); 
+			    $(data.transInfo.data).each(function(index,element){
+			    	var html = '';
+			    	html += '<div class="order_follow_hover_con">';
+			    	html += '<div class="order_follow_hover_time">'+element.time+'</div>';
+			    	html += '<div class="order_follow_hover_text">'+element.context+'</div>';
+			    	html += '<div class="clear"></div>';
+			    	html += '</div>'; 
+			    	jQuery("#top_order_transInfo").append(html);
+			    }); 		    	
+		    }		 
+	   },"json");
+};
+
+// top购物车信息
+var content;
+function get_top_shopcart(type,goodsids){
+	 var content = null;
+	 jQuery.post("http://www.hyuntao.com/get_top_shopcart.htm?jsoncallback=?",{"type":type,"goodsids":goodsids},function(data){	 
+		 if(data!=null){
+			   jQuery("#top_cart_total_num").html(data.goods_class_total_num);
+			   jQuery("#top_cart_total_price").html("￥"+data.total_price);
+			   
+			   var goodsCartNum = data.goods_class_total_num;
+			   if(goodsCartNum>99){
+				   goodsCartNum = 99+"+";
+			   }
+			   jQuery("#goods_class_total_num").html(goodsCartNum);
+			   
+               var b = true;
+			   if(data.scvs!=null && 
+					   data.scvs!="undefined" &&
+					   data.goods_class_total_num>0){
+
+				    if(!content){
+					   var dom =  $(".shopping_car_show_main");
+				       content = dom.clone();
+				       dom.remove();					   
+				    }
+			    	jQuery("#header_shoping_car").html("");
+			    
+			    	$(data.scvs).each(function(index,element){
+				    	$(element.gcvs).each(function(index_gc,element_gc){
+				    		 if(content!=null){
+				    			    b = false;
+				    			    var imgDom = content.find(".shopping_car_show_img img");
+				    			    var imgADom = content.find(".shopping_car_show_img");
+				    			    var comDom = content.find(".shopping_car_show_con");
+				    			    var priceDom = content.find(".shopping_car_show_price");
+				    			    var delDom = content.find(".shopping_car_show_del");
+				    			    if(imgDom){
+				    			    	imgDom.attr("src","http://hyt-file.img-cn-hangzhou.aliyuncs.com/"+element_gc.goods_img);
+				    			    }
+				    			    var redirectUrl = "http://www.hyuntao.com/redirect_goods_details.htm?goodsId="+element_gc.goods_id;
+						    	    if(imgADom){
+						    	    	imgADom.attr("href",redirectUrl);
+						    	    }
+						    	    if(comDom){
+						    	    	comDom.text(element_gc.goods_name);
+						    	    	comDom.attr("href",redirectUrl);
+						    	    	comDom.attr("title",element_gc.goods_name+" "+element_gc.gspval);
+						    	    }
+						    	    if(priceDom){
+						    	    	priceDom.html('￥'+element_gc.goods_price+'<i>x'+element_gc.num+'</i>');
+						    	    }
+						    	    if(delDom){
+						    	    	delDom.attr("id",element_gc.goods_cart_id);
+						    	    }
+						    	
+						    	    TGOGO.run(content);
+							    	jQuery("#header_shoping_car").append('<div class="shopping_car_show_main" >'+content.html()+'</div>');				    			 
+				    		 }
+				    	}); 
+				    }); 
+			    	jQuery(".shopping_car_show_del").bind('click', function() { 
+		    			get_top_shopcart("del",this.id);
+		    		}); 
+			    	
+			    	jQuery("#sub_top_cart").show();
+			   }else{
+				   jQuery("#sub_top_cart").hide();
+			   }
+			   
+			   if(b){
+				   jQuery(".shopping_car_show_main").hide();
+		    	}
+			   // 更新侧边栏购物车
+			   if("ready"!=type){
+				   var sidebar_car = jQuery("#sidebar_shopping_car").html();
+				   if(sidebar_car!=null && sidebar_car!=undefined && sidebar_car!="undefined"){
+					   update_sidebar_shopcart(1);
+				   }				   
+			   }
+		   }
+	   },"jsonp");	
+	 
+	 jQuery("#shopping_car_hover").show();
+};
+jQuery(document).ready(function(){
+	get_top_shopcart("ready","");
+	var keyword=$("#keyword").val();
+	var keyw='猕猴桃';
+	var key2='猕猴桃';
+	$(".keyword").focusin(function(){
+		if($(this).val() == key2){
+			$(this).val("");
+		}else {
+			if($(this).val() == ""){
+				$(this).val();
+			}
+			
+		}
+		
+	});
+	$(".keyword").blur(function(){
+		if($(this).val() == ""){
+			$(this).val(keyw);
+		}
+	});
+	
+});
+
+
+function removeHTMLTag(str) {
+    str = str.replace(/<\/?[^>]*>/g,''); //去除HTML tag
+    str = str.replace(/[ | ]*\n/g,'\n'); //去除行尾空白
+    //str = str.replace(/\n[\s| | ]*\r/g,'\n'); //去除多余空行
+    str=str.replace(/&nbsp;/ig,'');//去掉&nbsp;
+    return str;
+}
+</script>
+<div class="content_box">
+
+<!--顶部广告-->
+
+<!--搜索&&订单&&购物车部分-->
+<div class="content_zone_one">
+    <!--好云淘logo广告-->
+    <div class="content_left">        
+        <a href="http://www.hyuntao.com/index.html">
+                   <img class="pg_logo" src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/system/8928a69c-f2fe-4be2-906f-70f70b0c317e.png" />
+                 </a>
+            </div>
+    <!--搜索栏-->
+<form action="http://www.hyuntao.com/search.htm" method="get" id="searchForm">
+    <div class="content_middle">
+        <div class="content_middle_search">
+            <!--搜索框-->
+            <input type="text" name="keyword" id="keyword" class="content_middle_search_input keyword" value="猕猴桃"   onwebkitspeechchange="jQuery('#searchForm').submit()" >
+            <div class="search_btn button_color"onclick="search_form();">搜索</div>
+        </div>
+        <!--搜索产品-->
+        <div class="content_middle_product">
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('猕猴桃','goods');">猕猴桃</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('资州酥','goods');">资州酥</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('巴山土猪','goods');">巴山土猪</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('峨眉糕','goods');">峨眉糕</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('牛排','goods');">牛排</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('豆腐干','goods');">豆腐干</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('冷吃兔','goods');">冷吃兔</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('腊肉','goods');">腊肉</a></div>
+                        <div class="all_product"><a href="javascript:void(0);" onclick="search_form('酒','goods');">酒</a></div>
+                    </div>
+    </div>
+</form>
+    <!--订单&&购物车-->
+    <div class="content_right">
+          <!--订单-->
+          
+          <!--购物车-->
+          <div class="content_right_car">购物车
+              <div class="shopping_car"></div>
+              <div class="buy_car_number" id="goods_class_total_num">0</div>
+              <div class="shopping_car_hover">
+                  <div class="shopping_car_show_top">
+                      <div class="shopping_car_show_title">最近加入的商品</div>
+
+					  <div style="width:100%; max-height:340px; overflow-x:hidden; overflow-y:auto;" id="header_shoping_car">
+	                      <div class="shopping_car_show_main" style="display: none;" >
+	                          <a class="shopping_car_show_img"><img src=""></a>
+	                          <a class="shopping_car_show_con"></a>
+	                          <div class="shopping_car_show_total">
+	                              <span class="shopping_car_show_price"><i></i></span>
+	                              <div class="shopping_car_show_del" style="color: black;">删除</div>
+	                          </div>
+	                          <div class="clear"></div>
+	                      </div>
+						</div>
+                  </div>
+                  <div class="shopping_car_show_bottom">
+                      <div class="shopping_car_show_bottom_con">
+                          <div class="shopping_car_show_bottom_sum">
+                              <span class="shopping_car_show_bottom_number">共 <b id="top_cart_total_num">0</b> 件商品</span>
+                              <span>共计<em id="top_cart_total_price">￥0.00</em></span>
+                          </div>
+                          <a id="sub_top_cart" style="display: none;" href="http://www.hyuntao.com/buy_goods_cart1.htm" class="go_car_account button_color radius">查看购物车</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    <div class="clear"></div>
+</div>
+</div>
+<div class="right_side_bar" id="right_slide">
+    <div class="right_side_bar_con">
+        <!--个人中心登录-->
+        <div class="login_icon __right_slide_icon__" data-text="会员中心">
+            <div class="login_right_icon"></div>
+            <!--个人中心未登录-->
+            <div class="no_login_icon_hover __right_slide_div__">
+                <div class="no_login_icon_hover_top">
+                    <a href="#" class="no_login_icon_photo round">
+                        <img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/temp/def_img.png">
+                    </a>
+                </div>
+                <p class="no_login_icon_hover_con">你好！请 <a href="http://www.hyuntao.com/user/login.htm">登录</a>|<a
+                        href="http://www.hyuntao.com/register.htm">注册</a></p>
+            </div>
+                    </div>
+        <!--个人中心购物车 -->
+        <div class="center_shopping_car __right_slide_icon__" id="right_slide_shop_car">
+            <div class="center_shopping_car_icon"></div>
+            购物车
+            <div class="quantity round" id="all_total_num">0</div>
+            <div class="center_shopping_car_hover __right_slide_div__"  id="sidebar_center_shopping_car">
+                      <div id="main_sidebar_shopping_car">
+      
+        <input type="hidden" id="qur_total_num" name="qur_total_num" value="0"/>
+        <div class="center_shopping_car_top">
+            <input  id="checkboxall" type="checkbox" onclick="check_all_goods()" checked="checked"> &nbsp;&nbsp;全选
+        </div>
+        <br/><br/>
+
+        <div class="center_shopping_car_middle" id="sidebar_shopping_car">
+	                </div>
+        <div class="center_shopping_car_bottom">
+            <div class="center_shopping_car_bottom_text">
+                <div class="select_number">已选 <span id="sel_total_num">0</span> 件</div>
+                <div class="center_shopping_car_bottom_price" id="sel_total_price">¥0.00</div>
+                <div class="clear"></div>
+            </div>
+                    </div>
+     </div>  
+          
+        <script>
+           function checkCheckboxSel(contentid){
+        	   // 用于判断是否都选中(true为全部选中   false为非全部选中)
+ 			  var checkedAll = true;
+ 			  jQuery("#"+contentid).find("input[type=checkbox]").each(function(){
+ 				  var thisId = $(this).attr("id");
+ 				  if(thisId!="checkboxall"){
+ 					  var thisCheckedName = $(this).attr("name");
+ 					  if(thisCheckedName.indexOf("_")>-1){
+ 						  // 用于判断当前选中的所属店铺的ID是否选中(true为选中   false为不选中)
+ 						  var checkedCurrStore = true;
+ 						  // 当前选中的所属的店铺ID
+ 						  var currStoreId = thisCheckedName.split("_")[1];
+ 						  // 循环当前店铺下的对应的商品的checkbox
+ 						  $("[name='checkbox_"+currStoreId+"']:checkbox").each(function(){ 
+ 							  if(!$(this).prop('checked')){//当前未选中 
+ 								  checkedCurrStore = false;
+ 								  checkedAll = false;
+ 							  }
+ 			              })
+ 			              if(checkedCurrStore){
+ 			            	  $("#"+currStoreId).prop('checked',true);
+ 			              }else{
+ 			            	  $("#"+currStoreId).prop('checked',false);
+ 			              }
+ 					  }	  
+ 				  }
+ 				  if(checkedAll){
+ 					  $("#checkboxall").prop("checked",true);
+ 				  }else{
+ 					  $("#checkboxall").prop("checked",false);
+ 				  }			 
+ 			  });       	   
+           };
+        
+        
+           jQuery(document).ready(function(){
+        	   // 初始化
+        	   checkCheckboxSel("sidebar_shopping_car");
+        	   
+ 			   /**针对main_sidebar_shopping_car中所有checkbox的操作*/
+ 			   jQuery("#main_sidebar_shopping_car").find("input[type=checkbox]").click(function(){
+ 				  checkCheckboxSel("main_sidebar_shopping_car");
+ 				  
+ 				  var goods_id = getSelectGoods();	
+ 				  sidebar_shopcart("sel",goods_id);
+ 			   });        	   
+		  });       
+      </script>
+
+            </div>
+
+            <form id="shidebar_shopcart_form" method="post" action="http://www.hyuntao.com/buyer/goods_cart2.htm">
+                <input type="hidden" id="goodsids" name="goodsids" />
+            </form>
+            <script>
+                jQuery(document).ready(function(){
+                	
+                	jQuery("#KFLOGO").css("left","9px");
+                	jQuery("#KFLOGO").css("top","10px");
+                	jQuery("#KFLOGO").css("height","36px");
+                    /**初始化购物车中商品种类数**/
+                    var all_total_num = $("#qur_total_num").val();
+                    if(all_total_num!=null && all_total_num!=""){
+                    	if(all_total_num>99){
+                    		all_total_num = 99+"+";
+                    	}
+                        jQuery("#all_total_num").html(all_total_num);
+                    }
+
+                    /**初始化侧边栏购物车信息*/
+                    update_sidebar_shopcart();
+                });
+
+                /**控制数量输入框只能输入数字*/
+                function onlyNum(){
+                    if(!((event.keyCode>=48&&event.keyCode<=57) || (event.keyCode>=96&&event.keyCode<=105) || event.keyCode==8))
+                        event.returnValue=false;
+                };
+
+                /**+-购物车中某商品的数量*/
+                change_fn = function(obj){
+                    var cart_id=obj.attr("cart_id");
+                    if(cart_id!=null && cart_id!="undefined"){
+                        var count=jQuery("#goods_count_"+cart_id).val().replace(/\D/g,'');
+                        var store_id=obj.attr("store_id");
+                        goods_count_adjust(cart_id,store_id,count);
+                    }
+                }
+
+                /**改变购物车数量*/
+                function goods_count_adjust(cart_id,store_id,count){
+                    var goodsids = getSelectGoods();
+                    jQuery.post("http://www.hyuntao.com/goods_count_adjust.htm",{"cart_id":cart_id,"store_id":store_id,"count":count,"address_id":"","goodsids":goodsids,"isSideBarCart":"SIDE"},function(data){
+                    	if(data.error=="100"){
+                            jQuery("#goods_total_price_"+cart_id).html("¥"+data.goods_total_price);
+                            jQuery("#sc_total_price_"+store_id).html("¥"+data.sc_total_price);
+                            jQuery("#sel_total_num").html(data.sel_total_num);
+                            jQuery("#sel_total_price").html("¥"+data.all_total_price);
+                            
+                            get_top_shopcart("ready","");
+                        }
+                        else if(data.error=="200"){
+                            showDialog("商品库存不能满足您的购买量！",function(){});
+                            jQuery("#goods_count_"+cart_id).val(jQuery("#goods_count_"+cart_id).attr("goods_count"));
+                        }
+                        else if(data.error=="300"){
+                            showDialog("您的购买量已经超过团购限购量！",function(){});
+                            jQuery("#goods_count_"+cart_id).val(jQuery("#goods_count_"+cart_id).attr("goods_count"));
+                        }
+                    },"json");
+                }
+
+                /**某个所属商家的选中操作*/
+                function check_goods(storeId){
+                    if($('#'+storeId).is(':checked')) {
+                        $("[name='checkbox_"+storeId+"']:checkbox").prop('checked',true);
+                    }else{
+                        $("[name='checkbox_"+storeId+"']:checkbox").prop("checked",false);
+                    }
+                };
+
+                /**全选和反选操作*/
+                function check_all_goods(){
+                    // 用于记录是否全部选中(true为全部选中   false为非全部选中)
+                    var checkedAll = $("#checkboxall").prop("checked");
+                    if(checkedAll){
+                        $("input:checkbox").each(function(){
+                            var thisId = $(this).attr("id");
+                            if(thisId!="checkboxall"){
+                                $(this).prop('checked',true);
+                            }
+                        });
+                    }else{
+                        $("input:checkbox").each(function(){
+                            var thisId = $(this).attr("id");
+                            if(thisId!="checkboxall"){
+                                $(this).prop('checked',false);
+                            }
+                        });
+                    }
+                };
+
+                /**获取选中购物中的商品*/
+                function getSelectGoods(){
+                    var goods_id = "";
+                    jQuery("#sidebar_shopping_car").find("input[type=checkbox]").each(function(){
+                        if($(this).prop("checked")){
+                            var thisCheckedId = $(this).attr("id");
+                            if(thisCheckedId.indexOf("_")>-1){
+                                var currGoodsId = thisCheckedId.split("_")[1];
+                                goods_id = goods_id+currGoodsId+",";
+                            }
+                        }
+                    });
+                    return goods_id;
+                };
+
+                function sidebar_shopcart(type,goodsids){
+                    jQuery.post("http://www.hyuntao.com/get_top_shopcart.htm?jsoncallback=?",{"type":type,"goodsids":goodsids},function(data){
+                        if(data!=null){
+                        	var goodsCartNum = data.goods_class_total_num;
+               			    if(goodsCartNum>99){
+               				   goodsCartNum = 99+"+";
+               			    }
+               			   
+                            jQuery("#sel_total_num").html(goodsCartNum);
+                            jQuery("#sel_total_price").html("￥"+data.total_price);
+                            if(data.scvs!=null){
+                                $(data.scvs).each(function(index,element){
+                                    jQuery("#sc_total_price_"+element.store_id).html("￥"+element.store_total_price);
+                                });
+                            }
+                        }
+                    },"json");
+                };
+
+                /**侧边栏购物车更新*/
+                function update_sidebar_shopcart(value){
+                    var goodsids = 0;
+                    if(value==1){
+                        goodsids = getSelectGoods();
+                    }
+                    if(value==null || value==""){
+                    	value = "";
+                    }
+                    
+                    //var update_sidebar_shopcart_url = "http://www.hyuntao.com/update_sidebar_shopcart.htm";
+                    var update_sidebar_shopcart_url = "http://www.hyuntao.com/sidebar_shopcart.htm";
+                    jQuery.post(update_sidebar_shopcart_url,{"goodsids":goodsids,"type":value},function(data){
+                        if(data!=null && data!=""){
+                            jQuery("#sidebar_center_shopping_car").html(data);
+                            TGOGO.run(jQuery("#sidebar_center_shopping_car"));
+
+                            var all_total_num = $("#qur_total_num").val();
+                            if(all_total_num!=null && all_total_num!=""){
+                            	if(all_total_num>99){
+                            		all_total_num = 99+"+";
+                            	}
+                                jQuery("#all_total_num").html(all_total_num);
+                            }
+                        }
+                    },"text"); 
+                    
+                };
+
+                /**提交购物车表单*/
+                function subShidebarShopcartForm(){
+                    jQuery.get("http://www.hyuntao.com/check_user_login.htm",function(data){
+                        if(data=="login"){
+                            var goods_id = getSelectGoods();
+                            if(goods_id!=null && goods_id!=""){
+                                $("#goodsids").val(goods_id);
+                                $("#shidebar_shopcart_form").submit();
+                                //window.location.href="http://www.hyuntao.com/buy_goods_cart1.htm";
+                            }else{
+                                showDialog("请选择要购买的商品",function(){});
+                            }
+                        }else{
+                            showConfirm("未登录或登录已过期，是否马上登录？",function(){
+                                window.location.href="http://www.hyuntao.com/user/login.htm";
+                            },function(){});
+                        }
+                    },"text");
+                };
+            </script>
+        </div>
+        <!--个人中心我的资产-->
+        <div class="my_asset __right_slide_icon__" data-text="我的资产" style="display:none;">
+            <div class="my_asset_hover __right_slide_div__">
+                <div class="my_asset_hover_top">
+                    <div class="my_asset_hover_top_list background" onclick="javascript:window.location.href='http://www.hyuntao.com/buyer/user_integral.htm'">
+                        <i> <a href="javascript:void(0)">0</a>
+                            </i>
+                        <p>积分</p>
+                    </div>
+                    <div class="my_asset_hover_top_list" onclick="javascript:window.location.href='http://www.hyuntao.com/buyer/coupon.htm'">
+                        <i><a href="javascript:void(0)">0</a>
+                            </i>
+                        <p>优惠券</p>
+                    </div>
+                    <!--<div class="my_asset_hover_top_list">-->
+                    <!--<i>￥</i>-->
+
+                    <!--<p>可用余额</p>-->
+                    <!--</div>-->
+                    <div class="clear"></div>
+                </div>
+
+                <div class="my_asset_hover_bottom">
+                    <div class="my_asset_hover_bottom_title">可用优惠券</div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!--个人中心我看过的-->
+        <div class="my_saw __right_slide_icon__" data-text="浏览记录">
+            <div class="my_saw_hover __right_slide_div__">
+                <div class="my_saw_hover_top">
+                    <div class="my_saw_hover_top_left">共 <span>0</span> 件商品</div>
+                    <div class="my_saw_hover_top_right" onclick="deleteGoodsCookie()">清空</div>
+                </div>
+                <div class="my_saw_hover_bottom">
+
+                                        <script type="text/javascript">
+                        /*
+                         * 收藏商品
+                         */
+                        function addShopToCollect(id){
+                            //添加商品到收藏夹
+                            if(id == -1){
+                                showDialog("您不能收藏自己的商品",function(){});
+                            }else if(id > 0){
+                                jQuery.post("http://www.hyuntao.com/add_goods_favorite.htm",{"id":id},function(data){
+                                    if(data==0){
+                                        showDialog("商品收藏成功！",function(){window.location.reload();});
+
+                                    }
+                                    if(data==1){
+                                        showDialog("已经收藏该商品！",function(){});
+                                    }
+                                },"text");
+                            }
+                        }
+                        /*
+                         * 清空浏览记录
+                         */
+                        function deleteGoodsCookie(){
+                            showConfirm("您确认要清空浏览记录吗?",
+                                    function(){
+                                        jQuery.post("http://www.hyuntao.com/deleteGoodsCookie.htm",{},function(data){
+                                            window.location.reload();
+                                        },"text");
+                                    },
+                                    function(){}
+                            );
+                        }
+                        /*
+                         * 删除某个商品浏览记录
+                         */
+                        function deleteGoodsCookieById(id){
+                            showConfirm("您确认要删除该商品的浏览记录吗?",
+                                    function(){
+                                        jQuery.post("http://www.hyuntao.com/deleteGoodsCookieById.htm",{id:id},function(data){
+                                            window.location.reload();
+                                        },"text");
+                                    },
+                                    function(){}
+                            );
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!--个人中心充值-->
+       <!-- <div class="top_up __right_slide_icon__" data-text="手机充值">
+            <div class="top_up_hover __right_slide_div__">
+                <form id="sidebarRechargeForm" action="http://www.hyuntao.com/chongzhi/mobileReChargeOrder.htm" method="get">
+                    <div class="top_up_hover_main">
+                        <div class="top_up_hover_left">号码：</div>
+                        <div class="top_up_hover_right">
+                            <label><input type="text" onkeyup="sidebarInpriceChange()" onchange="sidebarInpriceChange()" name="mobileNum" id="sidebarMobileNum" placeholder="手机号码" class="__TGOGO__" data-type="showMobileStyle"/></label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="top_up_hover_main">
+                        <div class="top_up_hover_left">面值：</div>
+                        <div class="top_up_hover_right top_up_hover_right_add__" id="cz_content">
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="10" />10元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="20" />20元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="30" />30元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="50" />50元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="100"/>100元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="200" />200元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="300" />300元</label>
+                            <label><input type="radio" name="denomination"  onclick="sidebarInpriceChange(this)" value="500" />500元</label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="top_up_hover_main">
+                        <div class="top_up_hover_left"></div>
+                        <div class="top_up_hover_right">
+                            <b id="sidebarInprice"></b>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="top_up_hover_main">
+                        <div class="top_up_hover_left"></div>
+                        <div class="top_up_hover_right">
+                            <a href="javascript:void(0)" onclick="sidebarMobileReChargeClick()" class="top_up_hover_right_btn button_color radius">立即充值</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </form>
+                <script>	
+                var rechargeNum = "";
+                function sidebarInpriceChange(obj){
+                    if($("#sidebarMobileNum").val() == ""){
+                        return ;
+                    }
+                    if(rechargeNum == $("#sidebarMobileNum").val()){
+                        return ;
+                    }
+                    if($("#sidebarMobileNum").val() == ""){
+                        $("#sidebarInprice").html("&nbsp;");
+                        return ;
+                    }
+                    var p = /^1[3|5|7|8|][0-9]{9}$/;
+                    if(!p.test($("#sidebarMobileNum").val())){
+                        //alert("请输入正确的手机号码");
+                        return ;
+                    }
+                    $("#sidebarInprice").html("&nbsp;");
+                    sidebargetRechargeInfo($("#sidebarMobileNum").val(),$(obj).val());
+
+
+                }
+                function sidebargetRechargeInfo( no, e){
+                    if(no == undefined || no == ""){
+                        return ;
+                    }
+                    if(e == undefined || e == ""){
+                        return ;
+                    }
+                    jQuery.post("http://www.hyuntao.com/chongzhi/getRechargeInfo.htm",{
+                        'mobileNum':no,
+                        'denomination':e
+                    },function(data){
+                        if(data != undefined && data != ""){
+                            var inprice = parseFloat(data.inprice);
+                            if(inprice > 0){
+                                $("#sidebarInprice").html(data.city + " 价格：" + inprice.toFixed(2));
+                            }
+                        }
+                    });
+                }
+                function sidebarMobileReChargeClick(){
+
+                    if($("#sidebarMobileNum").val() == ""){
+                        showDialog("请输入手机号码",function(){});
+                        return ;
+                    }
+                    var p = /^1[3|5|7|8|][0-9]{9}$/;
+                    if(!p.test($("#sidebarMobileNum").val())){
+                        showDialog("请输入正确的手机号码",function(){});
+                        return ;
+                    }
+                    var is_check = false;// 都没选中
+	         		jQuery("#cz_content").find("input[type=radio]").each(function(){
+	     				  if($(this).prop("checked")){
+	     					 is_check = true;
+	     				  }
+	     	        });
+                 	if(!is_check){
+                 		 showDialog("请选择充值金额",function(){});
+                         return ;
+                 	}
+                    $("#sidebarRechargeForm").submit();
+
+                }
+                </script>
+            </div>
+        </div>  -->
+        <div style="margin-top: 10px;margin-left: 8px;">
+        <!--在线客服-->
+                  <script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10111611&style=1&kf=584418345@qq.com'></script>
+                </div>
+        <!--个人中心二维码-->
+        <div class="ewm_code __right_slide_icon__" data-text="下载APP">
+        <div class="login_right_icon"></div>
+        <div class="ewm_code_hover __right_slide_div__">
+        <a class="ewm_code_hover_img" href="#"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/temp/s_ewm.gif"></a>
+
+        <p class="ewm_code_hover_name">手机上好云淘&nbsp;&nbsp;&nbsp;&nbsp;享优惠</p>
+      <!--  <a href="javascript:void(0);" class="ewm_code_hover_btn btn_gray_ewm radius"><span class="ios_icon"></span>IOS下载</a>-->
+        <a href="https://itunes.apple.com/cn/app/hao-yun-tao-haoyuntao-for/id972533803?mt=8" class="ewm_code_hover_btn radius" target="_Blank"><span class="ios_icon"></span>IOS下载</a>
+        <a href="http://www.hyuntao.com/downloadApp.htm" class="ewm_code_hover_btn radius"><span class="android_icon"></span>安卓下载</a>
+        </div>
+        </div>
+        <!--返回顶部-->
+        <a class="return_back" id="right_slide_top_btn"></a>
+        <!-- <script type='text/javascript' src='http://tb.53kf.com/kf.php?arg=10111611&style=1'></script> -->
+    </div>
+</div>
+<script type="text/javascript" src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/js/right_slide.js"></script>
+
+</div>
+<!--content-->
+<div class="content_box bottom">
+<!--包裹导航start-->
+ <!--包裹导航start-->
+    <!--商品分类（左侧）-->
+		<div class="new_nav_font">
+			<ul>
+				<li class="active_new"><a href="http://www.hyuntao.com/index.htm">首页</a></li>
+				<!-- 商品顶级分类 -->
+				 				 							<li><a href="http://www.hyuntao.com/store_goods_list_70002.htm">品质食品</a></li>
+							  						 							<li><a href="http://www.hyuntao.com/store_goods_list_70003.htm">茶饮酒水</a></li>
+							  						 							<li><a href="http://www.hyuntao.com/store_goods_list_70004.htm">粮油调味</a></li>
+							  						 							<li><a href="http://www.hyuntao.com/store_goods_list_70001.htm">肉类速冻</a></li>
+							  						 			  						 			  				  		<!-- 平台活动导航 -->
+		  				        			        		        			        				        				        				        <li><a href="http://www.hyuntao.com/brand.htm">品牌街</a></li>
+				    		        		  		
+			</ul>
+		</div>
+<style type="text/css">
+.new_nav_font{
+    height: 40px;
+    width: 100%;
+    background-color: #000000;
+}
+.new_nav_font>ul{
+    width: 1200px;
+    margin: 0px auto;
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.new_nav_font>ul>li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.new_nav_font>ul>li:hover{
+  background-color: #ce1f2c;  
+}
+.new_nav_font>ul>.active_new{
+   background-color: #ce1f2c; 
+}
+.new_nav_font>ul>li>a{
+	color:#fff;
+	padding: 0px 30px;
+	display: block;
+}
+</style>
+<!--包裹导航end-->
+<!--商品菜单导航部分-->
+<div class="content_zone_two">
+<!---->
+<div class="intro">
+    <div class="intro_title">
+        <!-- 二级分类 -->
+           <span class="type_title_name"><a href="http://www.hyuntao.com/store_goods_list_other70004.htm">粮油调味</a></span> >
+           <a href="http://www.hyuntao.com/store_goods_list_other70021.htm">南北干货</a> 
+            </div>    
+    <!-- 商品详情-图片和规格 -->
+    <div class="intro_img">
+        <!--自动缩放：imgFixedDiv   图片放大：imgEnlarged-->
+        <div class="__TGOGO__ show_img" data-type="imgEnlarged" id="big_img">
+                                    <img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058083520.jpg" style="cursor:pointer; width: 100%; height: 100%;">
+        </div>
+        <ul class="small_img_ul">
+              <li class="small_img_list"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058083520.jpg" newSrc="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058083520.jpg" style="cursor:pointer;"/></li>
+                            <li class="small_img_list"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058071568.jpg" newSrc="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058071568.jpg" style="cursor:pointer;"/></li>
+                            <li class="small_img_list"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/10/14/20161014152647187.jpg" newSrc="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/10/14/20161014152647187.jpg" style="cursor:pointer;"/></li>
+                            <li class="small_img_list"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058094835.jpg" newSrc="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058094835.jpg" style="cursor:pointer;"/></li>
+                            <li class="small_img_list"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058116309.jpg" newSrc="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271058116309.jpg" style="cursor:pointer;"/></li>
+                      </ul>
+        <script>
+            (function(){
+                var all_lists = $(".small_img_list"),
+                    img = null;
+                //默认第一个小图选中
+                all_lists.eq(0).addClass("small_img_list_active").removeClass("small_img_list");
+
+                all_lists.click(function(){
+                    //选中变色
+                    all_lists.removeClass("small_img_list_active").addClass("small_img_list");
+                    $(this).addClass("small_img_list_active").removeClass("small_img_list");
+
+                    //图片放大功能
+                    var src = $(this).find("img").attr("newSrc"),
+                        fn_name = $("#big_img").attr("fn_name");
+                    window[fn_name].changeImg(src);
+                });
+            })();
+        </script>
+        <div class="enjoy_box"> 
+	        <a class="intro_collect" id="add_fav_good"   href="javascript:void(0);" target="_self">收藏(<span id="cn_fav">0</span>)
+	        <div class="collect_icon"></div> 
+	        </a>
+
+        	<div class="clear"></div>
+        </div>
+        
+    </div>   
+<!--<div class="intro_con">-->
+        <div class="intro_con_middle">
+           	            <div class="intro_con_name">
+	                <p>山霸王 通江 椴木银耳 干货 特级 65g</p>
+	                <span></span>
+	            </div>
+	            	            <div class="intro_con_price">
+	                	                 <!-- 是否为特价商品 -->
+	                	                  <p id="price">￥128.00</p>
+	                	                <input type="hidden" id="buy_goods_count" name="buy_goods_count" value="497"/>
+	                <input type="hidden" id="buy_goods_price" name="buy_goods_price" value="128.00"/>
+					<span>市场价格：<del style="margin-left: 5px">￥128.00</del></span>
+	            </div>
+	            	            
+                                                <div class="intro_con_info">
+            <div id="intro_con_info_border">
+                <div class="intro_con_main">
+                    <div id="intro_con_main_title">请选择商品属性</div>
+                    <div id="intro_con_main_close">X</div>
+                    <div class="clear"></div>
+                </div>
+
+
+	             	              <div class="intro_con_main">
+	               <div class="intro_con_left">购买数量：
+	                 <div class="count_reduce"></div>
+	                 </div>
+	                  <div class="intro_con_right">
+						  <input class="__TGOGO__ buy_number_input"
+	                               data-type="numberControl"
+								   								   		data-max_number="497"
+								   	                               data-min_number="1"
+	                               data-change_fn="change_fn"
+	                               type="text"
+	                               value="1"
+	                               id="goods_count"
+	                               name="text"
+	                               onkeyup="this.value=this.value.replace(/\D/g,'')"  
+	                               onafterpaste="this.value=this.value.replace(/\D/g,'')">
+	                               
+	                               	                    <!--团购过期的话取商品库存 -->
+	                    	                                                               件（库存<b id="goods_inventory" style="font-weight:normal;">497</b>件）
+	                     	                    </div>  	                  
+	                   <div class="clear"></div>
+	                   </div>
+	                <!-- 赠品 -->
+	                	                <!-- 赠品 -->
+	                                       <div class="buy_car_box">
+                           <div class="buy_after_zone box_shadow" id="show_buy_after_zone" style="display: none;">
+                               <div class="buy_after_zone_top">
+                                   <span class="zone_close"></span>
+                                   <span class="join_shop_car"></span>
+                                   <p>商品已成功加入购物车</p>
+                               </div>
+                               <div class="buy_after_zone_bottom">
+                                   <b class="buy_after_zone_text">您可以：</b>
+                                   <a href="http://www.hyuntao.com/buy_goods_cart1.htm" class="into_account button_color radius">去购物车结算</a>
+                                   <span>或</span>
+                                   <a href="javascript:void(0);" class="go_on_shopping">继续购物</a>
+                               </div>
+                           </div>
+                           <!-- 立即购买 -->
+                             <a class="add_buy_car fast_buy radius"  href="javascript:void(0);" onclick="buy_now('default')">立即购买</a>
+                         <!-- 加入购物车 -->
+                             <a class="add_buy_car button_color radius" href="javascript:void(0);" id="add_show_car_btn" onclick="add_cart('default');">
+                               <span class="add_buy_car_icon"></span>
+                               加入购物车
+                           </a>  
+                       </div>
+
+	                
+                    <!--点击加入购物车动画库-->
+                    <img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/shopping-cart.png" style="display: none;" />
+                    <script type="text/javascript" src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/js/jquery.fly.js"></script>
+                    <!--属性选择判断显示库存价格===  js-->
+	                <script type="text/javascript" src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/js/store_goods.js"></script>
+					<div class="intro_con_place">本商品由  <!-- <a  href="http://www.hyuntao.com/store_4.htm" > --><span style="color: #cf1e2c;">山霸王</span><!-- </a> --> 发货，并提供售后服务</div>
+            </div>
+            <div class="clear"></div>
+                       </div>
+                <!--发货说明-->
+                <div class="intro_con_text">
+                    <div class="intro_con_text_logo"><span class="text_icon">正</span>正品保障</div>
+                                                                                                                          <div class="intro_con_text_logo"><span class="text_icon">7</span>7天退换</div>
+                                                                                <div class="clear"></div>
+                </div>
+                                 <!-- 隐藏域的Form表单 -->
+                <form id="goodsForm" method="post" action="http://www.hyuntao.com/goods_buy_now.htm">
+                <input type="hidden"  id="goodsids" name="goodsids" value="423" />
+                <input type="hidden" id="gsp" name="gsp" value=""/>
+                <input type="hidden" id="buyCount" name="buyCount" value=""/>
+                <input type="hidden" id="orderType" name="orderType" value="0"/>
+                <input type="hidden" id="buyType" name="buyType" value=""/>
+                <input type="hidden" id="group_buy" name="group_buy" value=0>
+                
+                </form>   
+        </div>
+        <!-- 店铺动态  start-->
+                <div class="intro_other"  >
+<!-- 商品详情右边的店铺动态 -->
+            <!-- <div class="product_search_main">
+                <form id="keyWord_form" action="http://www.hyuntao.com/store_goods_search.htm" method="get">
+				<input type="hidden" name="store_id" value="4">
+                <div class="search_store">
+                    <input type="text" class="search_store_input" id="keyword" name="keyword">
+                    <div class="search_store_btn" onclick="keyword_submit();">搜本店</div>
+                </div>
+                </form>
+                <div class="product_shop_sort">商品分类
+                    <div class="product_sort_icon"></div>
+                    <div class="product_sort_icon_show"></div>
+                    <div class="product_shop_sort_show">
+                        <div class="product_shop_sort_con">
+                            <div class="border_none"></div>
+                            										<p class="product_shop_sort_list color diandian">• </p>
+									<p class="product_shop_sort_list diandian">• <a href="http://www.hyuntao.com/goods_list.htm?gc_id=20&store_id=4">银耳</a></p>
+								                            										<p class="product_shop_sort_list color diandian">• </p>
+									<p class="product_shop_sort_list diandian">• <a href="http://www.hyuntao.com/goods_list.htm?gc_id=21&store_id=4">木耳</a></p>
+								                            										<p class="product_shop_sort_list color diandian">• </p>
+									<p class="product_shop_sort_list diandian">• <a href="http://www.hyuntao.com/goods_list.htm?gc_id=22&store_id=4">香菇</a></p>
+								                            										<p class="product_shop_sort_list color diandian">• </p>
+									<p class="product_shop_sort_list diandian">• <a href="http://www.hyuntao.com/goods_list.htm?gc_id=23&store_id=4">花菇</a></p>
+								                            										<p class="product_shop_sort_list color diandian">• </p>
+									<p class="product_shop_sort_list diandian">• <a href="http://www.hyuntao.com/goods_list.htm?gc_id=24&store_id=4">两耳一菇</a></p>
+								                            										<p class="product_shop_sort_list color diandian">• </p>
+									<p class="product_shop_sort_list diandian">• <a href="http://www.hyuntao.com/goods_list.htm?gc_id=25&store_id=4">大枣</a></p>
+								                                                    </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div> -->
+            <!--<div style="width: 100%;height: 43px;margin: 15px 0;position: relative;">-->
+                <!--<a style='width: 120px;height: 22px;display: block;color: #005aa0;font-size: 14px;position: absolute;top: 10px' </a>-->
+            <!--</div>-->
+                                <div class="product_shop_store">
+                <a href="http://www.hyuntao.com/store_4.htm"></a><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store_logo/a9780313-5e4e-4bed-8229-f7de0a3b74ce.gif">
+                <a class="logo_store_name" href="http://www.hyuntao.com/store_4.htm"></a><span style="color: #cf1e2c;">山霸王</span>
+            </div>
+
+		
+			
+			
+			
+            <div class="detail_con_main">
+                <!--动态评价-->
+                <div class="detail_text">动态评价</div>              
+                <p class="shop_info_main_all">描述相符：<b>5.0</b>
+                					<span class="shop_info_high radius">高于</span><i>3.8</i>
+								</p>
+				<p class="shop_info_main_all">服务态度：<b>5.0</b>
+									<span class="shop_info_high radius">高于</span><i>3.8</i>
+								</p>
+				<p class="shop_info_main_all">发货速度：<b>5.0</b>
+									<span class="shop_info_high radius">高于</span><i>3.8</i>
+								</p>
+                
+                <!--联系方式-->
+                <div class="detail_text">联系方式</div>
+                <!-- <div class="detail_con">在线客服 :<img src=""></div> -->
+                <div class="detail_con">官方热线 : <span>400-0287-303</span></div>
+            </div>   
+                                   <!--  <a class="product_collect_store"  id="add_fav_store" val="4" hfav="0"   href="http://www.hyuntao.com/user/login.htm" target="_self" >收藏店铺</a> --> 
+            <!-- <div class="download_app" id="product_app_download">
+				<div style="cursor: pointer;">
+					<div class="download_app_icon"></div>
+					<span>下载官方APP</span>
+				</div>
+                <div class="ewm_code_hover">
+                    <a class="ewm_code_hover_img" href="#"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/temp/b_ewm.jpg"></a>
+                    <p class="ewm_code_hover_name">手机上好云淘&nbsp;&nbsp;&nbsp;&nbsp;享优惠</p>
+                    <a class="ewm_code_hover_btn radius"><span class="ios_icon"></span>下载APP</a>
+                    <a class="ewm_code_hover_btn radius"><span class="android_icon"></span>下载APP</a>
+                </div>
+
+            </div> -->
+			<script>
+				(function(){
+					jQuery("#product_app_download").click(function(){
+						jQuery(this).find(".ewm_code_hover").css({
+							display:"block",
+							right:"0",
+							bottom:"initial",
+							top:"35px",
+							border:"1px solid #333"
+						});
+						jQuery(this).find(".ewm_code_hover_btn").css({
+							"line-height":"22px"
+						})
+					});
+					jQuery("#product_app_download").hover(function(){},function(){
+						jQuery(this).find(".ewm_code_hover").css({display:"none"});
+					});
+
+				})();
+			</script>
+        </div>        
+                <!-- 团购商品详情右边的团购动态 -->
+              </div>
+                 <!-- 店铺动态 end -->
+    <!--</div>-->
+    
+<script type="text/javascript">
+jQuery("#intro_con_main_title").hide();
+jQuery("#intro_con_main_close").hide();
+
+jQuery(document).ready(function(){
+	$(".zone_close").click(function(){
+		$("#show_buy_after_zone").hide();
+	});
+	
+	$(".go_on_shopping").click(function(){
+		$("#show_buy_after_zone").hide();
+	});
+	
+	var data='[]';
+	  if(data!=""){
+	    var properties=eval("("+data+")");
+	    jQuery.each(properties,function(index,item){
+	        jQuery(".nav_con_top").append("<li>"+item.name+":"+item.val+"</li>");
+	    });
+	  }
+	  /* jQuery(".enjoy_btn").mouseover(function(){
+		   jQuery(".enjoy_box").show();
+		 }).mouseleave(function(){
+		  jQuery(".enjoy_box").hide();
+		 });   */
+	  jQuery("#detail_nav li").click(function(){
+			var uri=jQuery(this).attr("uri");
+			var controller=jQuery(this).attr("v_controller");
+			jQuery("."+controller).empty();
+			jQuery.post(uri,"",function(data){		
+		        jQuery("."+controller).append(data);
+			 },"text");
+		})
+
+	   // X点击关闭规格提示 
+	   jQuery("#intro_con_main_close").click(function(){
+		   jQuery("#intro_con_info_border").removeClass("intro_con_info_border");
+		   jQuery("#intro_con_main_title").removeClass("intro_con_main_title");
+		   jQuery("#intro_con_main_close").removeClass("intro_con_main_close");
+		   
+		   jQuery("#intro_con_main_title").hide();
+		   jQuery("#intro_con_main_close").hide();
+		});
+	   
+	   
+	   //收藏商品  
+	  
+	   $("#add_fav_good").click(function(){
+		   var cn='0';
+		   			   window.location.href="http://www.hyuntao.com/user/login.htm";   
+		   	   });
+	   
+	   });
+
+//关键字搜索
+function keyword_submit(){
+	jQuery("#keyWord_form").submit();
+};
+
+//加入购物车
+function add_cart(value){
+	if(value!="combin"){
+		if(jQuery("#buy_type")){
+			value = jQuery("#buy_type").val();
+		}else{
+			value = "default";
+		}
+	}
+	
+	var gg_max_count = 0;
+	if($("#gg_max_count")){
+		gg_max_count = $("#gg_max_count").val();
+	}
+	
+		  var add=false;
+	  var gsp="";
+	  if(jQuery("#goods_spec_main span").length==0){
+	     add=true;
+	  }else{
+		var arr=new Array(); 
+		jQuery("div[id^=show_goods_spec_]").each(function(){
+		   jQuery.each(jQuery(this).find("span[class='intro_con_right_select']"),function(){
+			  	gsp=jQuery(this).attr("gsp")+","+gsp; 
+		   });
+		   if(jQuery(this).find("span[class='intro_con_right_select']").length==0){
+		     	add=false; 
+		   }else{
+			    add = true;
+		   }	
+		   arr.push(add); 		   
+		});
+		for(var i=0;i<arr.length;i++){
+			if(arr[i]==false){
+				add=false; 
+			}
+		} 
+	  } 
+	  
+	  // 购买的数量
+	  var count=jQuery("#goods_count").val();
+	  // 当前库存
+	  var buy_goods_count=jQuery("#buy_goods_count").val();
+	  // 当前价格
+	  var buy_goods_price=jQuery("#buy_goods_price").val();
+
+	  if(count==0){
+		    add=false;
+			showDialog("至少购买一件商品!",function(){});
+			return;
+	  }
+	  if(buy_goods_count==0){
+		    add=false;
+			showDialog("商品库存为0,不能购买!",function(){});
+			return;
+	  }  
+	  
+	  if(add){
+		var goods_price = jQuery("#buy_goods_price").val();
+		if("combin"==value){// 如果是组合的话，购买数量只能是1
+			count = 1;
+		}
+		// 库存判断
+		jQuery.post("http://www.hyuntao.com/addcart_check_goodsnum.htm",{"goodsid":"423","count":count,"gsp":gsp,"type":value,"gg_max_count":gg_max_count},function(data){
+			 if(data=="true"){// 库存满足
+					jQuery.post("http://www.hyuntao.com/add_goods_cart.htm",{"id":"423","count":count,"price":goods_price,"gsp":gsp,"buy_type":value},function(data){
+						 if(data=="success"){
+							  showAnimate();
+							  get_top_shopcart("ready","");
+							  update_sidebar_shopcart();
+							  
+						 }else{
+							 $("#show_buy_after_zone").hide();
+							 showDialog("加入购物车失败",function(){});
+						 }
+					},"text");				 
+			 }else{// 库存不足
+				 var checkCountSplit = data.split("_");
+				 var checkGgmaxSplit = data.split(",");
+				 var checkBuyGgSplit = data.split("=");
+				 if(checkCountSplit!=null &&
+						 checkCountSplit.length == 2){
+					 jQuery("#goods_inventory").text(checkCountSplit[1]);
+					 showDialog("商品库存不能满足您的购买量!",function(){});
+				 }else if(checkGgmaxSplit!=null &&
+						 checkGgmaxSplit.length == 2){
+					 showDialog("您的购买量已经超过团购限购量",function(){});
+				 }else if(checkBuyGgSplit!=null &&
+						 checkBuyGgSplit.length == 2){
+					 showDialog("您已经有的购买量超过该团购商品的限购量",function(){});
+				 }
+				
+			 }
+		},"text");
+	  }else{
+		   jQuery("#intro_con_info_border").addClass("intro_con_info_border");
+		   jQuery("#intro_con_main_title").addClass("intro_con_main_title");
+		   jQuery("#intro_con_main_close").addClass("intro_con_main_close");
+		   
+		   jQuery("#intro_con_main_title").show();
+		   jQuery("#intro_con_main_close").show();
+	  }
+	};
+/**
+ * 立即购买
+ */
+function buy_now(value){
+	if(value!="combin"){
+		if(jQuery("#buy_type")){
+			value = jQuery("#buy_type").val();
+		}else{
+			value = "default";
+		}
+	}
+	
+	var gg_max_count = 0;
+	if($("#gg_max_count")){
+		gg_max_count = $("#gg_max_count").val();
+	}
+	
+		  var add=false;
+	  var gsp="";
+	  if(jQuery("#goods_spec_main span").length==0){
+	     add=true;
+	  }else{
+		var arr=new Array(); 
+		jQuery("div[id^=show_goods_spec_]").each(function(){
+		   jQuery.each(jQuery(this).find("span[class='intro_con_right_select']"),function(){
+			  	gsp=jQuery(this).attr("gsp")+","+gsp; 
+		   });
+		   if(jQuery(this).find("span[class='intro_con_right_select']").length==0){
+		     	add=false; 
+		   }else{
+			    add = true;
+		   }	
+		   arr.push(add); 		   
+		});
+		for(var i=0;i<arr.length;i++){
+			if(arr[i]==false){
+				add=false; 
+			}
+		} 
+	  } 
+	  
+	  // 购买的数量
+	  var count=jQuery("#goods_count").val();
+	  // 当前库存
+	  var buy_goods_count=jQuery("#buy_goods_count").val();
+	  // 当前价格
+	  var buy_goods_price=jQuery("#buy_goods_price").val();
+	  //商品ID
+	  var goodsid = 423;
+	  //商品价格
+	  var goods_price = jQuery("#buy_goods_price").val();
+	  
+	  var buytype = jQuery("#buy_type").val();
+	  
+	  //团购类型
+	  var group_buy = $("#group_buy").val();
+	  if(count==0){
+		    add=false;
+			showDialog("至少购买一件商品!",function(){});
+			return;
+	  }
+	  if(buy_goods_count==0){
+		    add=false;
+			showDialog("商品库存为0,不能购买!",function(){});
+			return;
+	  }  
+
+		// 库存判断
+		jQuery.post("http://www.hyuntao.com/check_buynow_goods_num.htm",{"goodsids":goodsid,"buycount":count,"gg_max_count":gg_max_count,"gsp":gsp,"group_buy":group_buy},function(data){
+			//计算字符串
+			var convertdata = eval(data);
+			if(convertdata[0].islogin == "already"){
+			  if(convertdata[0].stauts==true){// 库存满足
+							 //设置表单
+							   $("#gsp").val(gsp);
+							   $("#buyType").val(buytype);
+							   $("#buyCount").val(count);
+							   //提交表单
+							   $("#goodsForm").submit(); 
+				 		    
+			 }else{// 库存不足
+				 showDialog(convertdata[0].details_msg+"!",function(){});
+			 }
+			 }else{
+				  showConfirm("未登录或登录已过期，是否马上登录？",
+						  function(){
+				  		window.location.href="http://www.hyuntao.com/user/login.htm?url=http://www.hyuntao.com/goods_"+goodsid+".htm";
+				  		  }
+					  ); 
+			  }
+		},"text"); 
+	
+	};
+
+//加入购物车动画
+var showAnimate = function(){
+	var img_src = jQuery(".small_img_ul").find(".small_img_list_active").find("img").attr("src"),
+		shop_car = jQuery("<div></div>"),
+		shop_goods = jQuery("<div><img style='width:100%;height:100%:' src='"+img_src+"' /></div>"),
+		btn = $("#add_show_car_btn"),
+		scroll_top = $(document).scrollTop(),
+		scroll_left = $(document).scrollLeft(),
+		top = parseInt(jQuery("#right_slide_shop_car").offset().top) - scroll_top + 70,
+		btn_top = btn.offset().top - scroll_top + 10,
+		btn_left = btn.offset().left - scroll_left + 25,
+		end_left = parseInt($("body").width()) - 85,
+		end_top = top + 10;
+
+
+	shop_car.css({
+		width:"80px",
+		height:"73px",
+		position:"fixed",
+		right:"-80px",
+		top:top + "px",
+		"z-index":"100",
+		background:"url(http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/shopping-cart.png)"
+	});
+	shop_goods.css({
+		width:"20px",
+		height:"20px",
+		position:"fixed",
+		background:"#f00",
+		top:btn_top+"px",
+		left:btn_left+"px"
+	}).addClass("round");
+
+
+	$("body").append(shop_car).append(shop_goods);
+
+	shop_car.animate({
+		right:"40px"
+	},500,function(){
+		  $("#show_buy_after_zone").show();
+	});
+	shop_goods.fly({
+		start:{
+			left: btn_left,  //开始位置（必填）#fly元素会被设置成position: fixed
+			top: btn_top  //开始位置（必填）
+		},
+		end:{
+			left: end_left, //结束位置（必填）
+			top: end_top,  //结束位置（必填）
+			width: 20, //结束时高度
+			height: 20 //结束时高度
+		},
+//            autoPlay:false,            //是否直接运动,默认true
+		speed:1.2,        //越大越快，默认1.2
+		vertex_Rtop:30,           //运动轨迹最高点top值，默认20
+		onEnd:function(){
+			shop_goods.data("fly").destory();
+			shop_car.animate({
+				right:"-50px"
+			},500,function(){
+				setTimeout(function(){
+					shop_car.remove();
+					shop_goods.remove();
+				},0)
+			});
+		}
+	});
+};
+</script>
+     <!-- 商品详情-图片和规格 -->
+    <div class="clear"></div>
+</div>
+<!--商品详情-->
+<div class="detail">
+        <!-- 买的人浏览的商品-->
+                <div class="detail_left" >
+           <div class="recommend_product_left_title">买了的人也看了</div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1531.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/10/14/201610141435024716.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1531.htm">山霸王 木屑银耳 干货 200g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥33.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_410.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/05/27/201605271122101548.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_410.htm">山霸王 通江 有机椴木银耳 138g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥338.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_428.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/4/2016/11/12/201611120002269020.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_428.htm">山霸王 有机椴木黑木耳 干货 348g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥258.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1585.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/78/2017/02/06/201702061510228224.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1585.htm">九寨山里来四川土特产崇州牛尾笋 100g </a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥48.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1226.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/54/2016/10/21/201610212024506376.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1226.htm">邓桂圆四川泸州特产邓桂赛500g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥56.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1244.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/54/2016/10/21/201610212007451700.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1244.htm">邓桂圆四川泸州特产邓氏头圆  500g*2</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥199.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1191.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/39/2017/04/14/201704141100121342.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1191.htm">益昌 红薯粉饼 750g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥18.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1245.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/54/2016/10/21/201610212006554493.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1245.htm">邓桂圆四川泸州特产张坝5A级桂圆干 486g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥28.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_930.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/30/2016/06/02/201606021112109205.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_930.htm">禹珍 姬松茸 袋装128g</a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥56.00</p>
+	               	            </div>
+	        </div>
+	        	             			     			     <!--商品详情地址 -->
+                                                   	        <div class="recommend_product_left_list">
+	            <div class="__TGOGO__ product_list_photo" data-type="imgFixedDiv"><a href="http://www.hyuntao.com/goods_1187.htm"><img
+	                    src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/store/39/2017/04/14/201704141050087341.jpg"></a></div>
+	            <div class="recommend_product_left_con">
+	                <a class="recommend_product_left_name" href="http://www.hyuntao.com/goods_1187.htm">益昌 红薯粉饼 260g </a>
+		            <!--是否为团购商品 -->
+	               		                   <p class="recommend_product_left_price">￥7.50</p>
+	               	            </div>
+	        </div>
+	            </div> 
+               
+     <!-- 团购详情的左边 -->
+     
+         <!--  end -->
+         <!-- 组合销售 商品介绍-商品评价-->
+        <div class="detail_right">
+  
+  <!--组合销售 -->
+ <!-- 组合销售 end -->
+          <div class="__TGOGO__ detail_nav" data-type="tabChange" data-add_event_class="nav_change"
+             data-select_class="nav_select" data-selected="0" data-get_id_attr="show_id" id="detail_nav">
+            <ul>
+               <li class="nav_change" v_controller="nav_con_top" data-show_id="div_detail" uri="http://www.hyuntao.com/goods_detail.htm?goods_id=423&id=">商品介绍</li>
+               <li class="nav_change" v_controller="nav_con_top1" data-show_id="div_evaluate" uri="http://www.hyuntao.com/goods_evaluation.htm?goods_id=423&id=">商品评价(3)</li>
+               <li class="nav_change" v_controller="div_service" data-show_id="div_service" uri="http://www.hyuntao.com/usergoodsdetailset.htm?goods_id=423&type=1">售后服务</li>
+               <li class="nav_change" v_controller="div_service1" data-show_id="div_service1" uri="http://www.hyuntao.com/usergoodsdetailset.htm?goods_id=423&type=2">资质信誉</li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <!--产品介绍-->
+         <div id="div_detail">
+            <ul class="nav_con_top">
+            </ul>
+            <div style="margin-top:10px;">
+                <style>
+                    .detail_img img{
+                        margin: 0 auto;
+                    }
+                </style>
+            <div class="__TGOGO__ detail_img" data-type="imgAutoResize">
+            <img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271058556759.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271058565380.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271058578657.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271058585033.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271058593707.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059008263.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059012522.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059021224.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059035731.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059059172.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059062784.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059072766.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059096097.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059109297.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059115204.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059125.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059134710.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059132625.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059153665.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059162664.jpg" alt="" /><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/upload/common/201605271059309426.jpg" alt="" />
+            </div>
+            </div>
+        </div>
+        <!-- 商品评价 -->
+        <div id="div_evaluate">
+            <ul class="nav_con_top1">
+            </ul>
+        </div>
+        
+        <!-- 售后服务 -->
+        <div id="div_service" class="div_service"></div>
+        
+        <!-- 资质信誉 -->
+        <div id="div_service1" class="div_service1"></div>
+        
+            </div>
+         <!-- end -->
+    <div class="clear"></div>
+</div>
+</div>
+</div>
+<div><div class="footer_zone">
+    <!--footer链接-->
+    <div class="footer_main">
+      <ul>
+            <li class="footer_main_list">
+        <h3>新手上路</h3>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196612.htm" target="_blank">联系客服</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196611.htm" target="_blank">常见问题</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196609.htm" target="_blank">购物流程</a>
+                </li>
+            <li class="footer_main_list">
+        <h3>帮助中心 </h3>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196621.htm" target="_blank">快递说明</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196620.htm" target="_blank">如何获取/使用积分</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196615.htm" target="_blank">积分兑换说明</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196614.htm" target="_blank">积分规则</a>
+                </li>
+            <li class="footer_main_list">
+        <h3>支付方式</h3>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_8.htm" target="_blank">支付宝在线支付</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_7.htm" target="_blank">如何使用支付</a>
+                </li>
+            <li class="footer_main_list">
+        <h3>售后服务 </h3>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196624.htm" target="_blank">退换货说明</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196619.htm" target="_blank">如何退换货</a>
+                </li>
+            <li class="footer_main_list">
+        <h3>客服中心</h3>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_32772.htm" target="_blank">如何绑定手机</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_32771.htm" target="_blank">如何绑定邮箱</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_32770.htm" target="_blank">修改个人信息</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_32769.htm" target="_blank">会员修改密码 </a>
+                </li>
+            <li class="footer_main_list">
+        <h3>关于我们</h3>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196625.htm" target="_blank">诚聘英才</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_196623.htm" target="_blank">联系我们</a>
+                                        <a class="footer_main_list_link" href="http://www.hyuntao.com/help_32776.htm" target="_blank">关于好云淘</a>
+                </li>
+             <li class="clear"></li>
+      </ul>
+    </div>
+    <!--footer logo-->
+    <div class="footer_box">
+        <div class="footer_con">
+            <div class="footer_con_main">
+                <div class="footer_con_main_icon good_logo"></div>
+                <div class="footer_con_main_text">
+                    <h3 class="diandian">品质保障</h3>
+
+                    <p class="diandian">品质护航 购物无忧</p>
+                </div>
+            </div>
+            <div class="footer_con_main">
+                <div class="footer_con_main_icon day_logo"></div>
+                <div class="footer_con_main_text">
+                    <h3 class="diandian">七天无理由退换货</h3>
+
+                    <p class="diandian">为你提供售后无忧保障</p>
+                </div>
+            </div>
+            <div class="footer_con_main">
+                <div class="footer_con_main_icon special_logo"></div>
+                <div class="footer_con_main_text">
+                    <h3 class="diandian">特色服务体验</h3>
+
+                    <p class="diandian">为您呈现不一样的服务</p>
+                </div>
+            </div>
+            <div class="footer_con_main border">
+                <div class="footer_con_main_icon help_logo"></div>
+                <div class="footer_con_main_text border">
+                    <h3 class="diandian">帮助中心</h3>
+
+                    <p class="diandian">您的购物指南</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+    </div>
+    <!--footer说明-->
+    <div class="footer_bottom">
+        <!--关于我们-->
+                <div class="footer_bottom_left">
+            <ul class="footer_bottom_left_ul">
+            			     			                    <li class="footer_bottom_left_list">
+                <a href="http://www.hyuntao.com/help_about.htm " >
+                关于好云淘
+                </a>
+                </li>
+                			     			                    <li class="footer_bottom_left_list">
+                <a href="http://www.hyuntao.com/help_contact.htm " >
+                联系我们
+                </a>
+                </li>
+                			     			                    <li class="footer_bottom_left_list">
+                <a href="http://www.hyuntao.com/help_customer.htm " >
+                客户热线:400-0808-930
+                </a>
+                </li>
+                                <li class="footer_bottom_left_list" style="border-right: none"><a href="http://m.kuaidi100.com/" target="_blank">快递查询</a></li>              
+                <li class="clear"></li>
+            </ul>
+           <ul class="footer_bottom_left_ul">
+                <li class="footer_bottom_left_list" style="border: none">Copyright©2014-2015 好云淘版权所有 &nbsp;&nbsp;蜀ICP备15002083号</li>
+            </ul>           
+        </div>
+        <!--&lt;!&ndash;客户端下载&ndash;&gt;-->
+        <!--<div class="footer_bottom_middle">-->
+            <!--<div class="footer_bottom_middle_wm"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/temp/2wm.jpg"></div>-->
+            <!--<div class="footer_bottom_con_left">-->
+                <!--<div class="footer_bottom_con_text"><a class="diandian" href="#">客户端下载</a></div>-->
+                <!--<p class="footer_bottom_con_order diandian">手机下单优惠更多</p>-->
+
+                <!--<div class="iphone"></div>-->
+                <!--<a class="text_range" href="#">iPhone</a>              -->
+                <!--<div class="Android"></div>-->
+                <!--<a class="text_range" href="#">Android</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;官方微信&ndash;&gt;-->
+        <!--<div class="footer_bottom_right">-->
+            <!--<div class="footer_bottom_middle_wm"><img src="http://hyt-file.img-cn-hangzhou.aliyuncs.com/resources/newResources/image/temp/2wm.jpg"></div>-->
+            <!--<div class="footer_bottom_con_right">-->
+                <!--<div class="footer_bottom_con_text"><a class="diandian" href="#">官方微信</a></div>-->
+                <!--<p class="wx_text">扫一扫微信，百万豪礼等你来领</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="clear"></div>
+    </div>
+
+ <p></p>
+</div>
+
+<div class="popup_main_box" style="display:none;" id="_msg_">
+    <div class="popup_main_title_main">
+        <span class="popup_main_title diandian">好云淘提醒</span>
+        <span class="popup_close_icon e_close_btn"></span>
+        </div>
+    <div class="popup_main_zone">
+        <p></p>
+        <div class="popup_main_zone_button">
+            <a class="popup_main_zone_btn btn_color radius e_close_btn">确　定</a>
+        </div>
+    </div>
+</div>
+<div class="popup_main_box" style="display:none;" id="_msg2_">
+    <div class="popup_main_title_main">
+        <span class="popup_main_title diandian">好云淘提醒</span>
+        <span class="popup_close_icon e_close_btn"></span>
+    </div>
+    <div class="popup_main_zone">
+        <p></p>
+        <div class="popup_main_zone_button">
+            <a class="popup_main_zone_btn btn_color radius e_submit_btn">确　定</a>
+            <a class="popup_main_zone_btn close_btn radius e_close_btn">取　消</a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+
+function showDialog(text,fn){
+	if($("#_msg_").css("display") == "block"){
+        return;
+    }
+
+
+    jQuery("#_msg_").find("p").text(text);
+
+
+
+	new TGOGO.showCenterDiv_fn({
+        div: "_msg_",
+        zIndex: 1000,
+        closeRun: fn,
+        closeBtnClass:"e_close_btn"
+    });
+
+}
+
+function showDialog1(html,fn){
+	if($("#_msg_").css("display") == "block"){
+        return;
+    }
+    jQuery("#_msg_").find("p").html(html);
+	new TGOGO.showCenterDiv_fn({
+        div: "_msg_",
+        zIndex: 1000,
+        closeRun: fn,
+        closeBtnClass:"e_close_btn"
+    });
+}
+
+function showConfirm(text,fn,fn_close){
+	jQuery("#_msg2_").find("p").text(text);
+	new TGOGO.showCenterDiv_fn({
+        div: "_msg2_",
+        zIndex: 1000,
+        closeRun: fn_close,
+        closeBtnClass:"e_close_btn",
+        runClass : "e_submit_btn",
+        runFn : fn
+    });
+}
+
+
+function showConfirm1(html,fn,fn_close){
+	jQuery("#_msg2_").find("p").html(html);
+	new TGOGO.showCenterDiv_fn({
+        div: "_msg2_",
+        zIndex: 1000,
+        closeRun: fn_close,
+        closeBtnClass:"e_close_btn",
+        runClass : "e_submit_btn",
+        runFn : fn
+    });
+}
+
+</script>
+
+<!-- access count -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?08033a2d5b52946bbcfe301f4850fc9b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+</body>
+</html>

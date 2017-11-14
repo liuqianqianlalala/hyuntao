@@ -1,0 +1,117 @@
+.login_content{
+	.login_logo{
+		width: 225px;
+	    height: 46px;
+	    background: url(../images/logo.png);
+	    margin-top: 20px;
+	}
+	.logo_main{
+		margin: 60px 0;
+    	position: relative;
+    	height: 366px;
+    	.login_banner{
+    		display: block;
+		    width: 100%;
+		    height: 350px;
+		    border: none;
+		    overflow: hidden;
+		    position: relative;
+		    float: left;
+		    background-image: url(../images/login_bg.jpg);
+		    background-repeat: no-repeat;
+		    background-position: center center;
+		    background-color: transparent;
+    	}
+    	.login_tab{
+		    position: relative;
+		    top: -385px;
+		    left: 701px;
+		    width: 384px;
+		    height: 316px;
+		    box-shadow: 0 0 19px #ccc;
+		    color: #000;
+		    background: rgba(255, 255, 255, 0.5);
+		    z-index: 100;
+		    overflow: hidden;
+		    .login_info_main{
+		    	width: 334px;
+			    padding: 10px 25px 15px 17px;
+			    margin: 0 10px;
+			    .login_info_col{
+			    	height: 30px;
+			    	line-height: 30px;
+			    	.login_yun{
+			    		font-size: 22px;
+			    		color: #cf1e2c;
+			    		float: left;
+			    	}
+			    	.reg{
+			    		float: right;
+			    		color: #005aa0;
+			    	}
+			    }
+			    label{
+			    	position: relative;
+				    display: block;
+				    margin: 10px 0;
+				    line-height: 15px;
+				    border: 1px solid #ccc;
+				    input{
+				    	width: 288px;
+					    height: 40px;
+					    line-height: 40px\9;    
+					    background: #fff;
+					    padding-left: 7px;
+					    position: relative;
+				    }
+				    .input_user{
+				    	display: inline-block;
+					    width: 24px;
+					    height: 20px;
+					    background-image: url(../images/icon.png);
+					    background-repeat: no-repeat;
+					    background-position: 0 -518px;
+					    position: relative;
+					    top: 2px;
+					    left: 8px;	    
+				    }
+				    .input_pass{
+					    background-image: url(../images/icon.png);
+					    background-repeat: no-repeat;
+					    background-position: -38px -518px;
+				    }
+				    .input_check{
+				    	width: 16px;
+					    height: 16px;
+					    line-height: 16px;
+					    position: relative;
+					    top: 2px;
+				    }
+				    .forget_pass{
+				    	margin-left: 214px;
+				    }
+			    }
+			    .chec{
+			    	border: 0;
+			    }
+			    .submit{
+					width: 100%;
+				    height: 45px;
+				    line-height: 45px;
+				    border: none;
+				    outline: none;
+				    cursor: pointer;
+				    margin-top: 15px;
+				    background: #cf1e2c;
+				    color: #fff;
+				    font-size: 20px;
+			    }
+			    .error{
+			    color:red;
+			    font-size:14px;
+			    }
+		    }
+    	}
+	}
+
+}

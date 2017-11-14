@@ -1,0 +1,73 @@
+.ad {
+  width: 1200px;
+  height: 70px;
+  position: relative;
+  padding-top: 5px; }
+  .ad .close {
+    width: 15px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    height: 15px;
+    background: url(../images/icon.png);
+    background-repeat: no-repeat;
+    background-position: 0px -80px; }
+
+.banner img {
+  width: 100%;
+  height: 100%; }
+
+.content {
+  height: 255px;
+  margin-top: -26px; }
+  .content .content_left {
+    height: 255px;
+    float: left; }
+  .content .content_center {
+    width: 618px;
+    height: 255px;
+    float: left;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background-color: #fff; }
+    .content .content_center li {
+      width: 205px;
+      height: 126px;
+      float: left;
+      border-right: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5; }
+  .content .content_right {
+    width: 280px;
+    height: 255px;
+    float: left;
+    margin-left: 0px; }
+
+.bigrecomm {
+  height: 212px;
+  overflow: hidden; }
+  .bigrecomm .re {
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: 700; }
+  .bigrecomm ul {
+    height: 163px;
+    width: 1200px;
+    overflow: hidden; }
+    .bigrecomm ul li {
+      width: 143px;
+      height: 74px;
+      padding: 3px;
+      display: block;
+      float: left;
+      border-right: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+      background-color: #fff;
+      overflow: hidden; }
+      .bigrecomm ul li img {
+        width: 100%;
+        height: 100%; }
+
+/*# sourceMappingURL=index.css.map */

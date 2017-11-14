@@ -1,0 +1,40 @@
+.bigfooter{
+    width: 100%;
+    margin-top: 60px;
+    .footer{
+        text-align: center;
+    }
+}
+.footer_top{
+    ul{
+        height: 30px;
+        .last{
+            border: 0;
+        }
+        li{
+            display: inline-block;
+            height: 12px;
+            line-height: 12px;
+            padding-right: 15px;
+            border-right: 1px solid #808080;
+            margin-right: 10px;
+            margin-left: 5px;
+            a{
+                color: #333;
+            }
+        }
+    }
+}
+.footer_bottom{
+    ul{
+        height:30px;
+        li{
+            height: 12px;
+            line-height: 12px;
+            padding-right: 15px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+    }
+}

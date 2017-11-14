@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style type="text/css">
+		.confi_con{
+			font-size: 14px;
+		}
+		.confi_ti{
+			margin:20px 0;
+		}
+		textarea{
+			width: 315px;
+			height: 150px;
+			resize:none;
+			margin-top: 10px;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/top.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/right_nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/list.css">
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.cookie.js"></script>	
+	<script src="../js/common.js"></script>
+	<script src="../js/confirm.js"></script>
+</head>
+<body>
+	<div class="bigheader"></div>
+	<div class="top"></div>
+	<div class="bignav"></div>
+	<!-- 右侧固定导航条 -->
+	<div class="right_sider"></div>
+	<div class="confi_con main">
+		<div class="confi_ti">
+			<h1>确认订单</h1><br>
+			<h2>收货地址：</h2>
+		</div>
+		
+		<select id="province">
+			<option value="-1">请选择省份</option>
+		</select>
+		<select id="city">
+			<option value="-1">请选择城市</option>
+		</select>
+		<select id="district">
+			<option value="-1">请选择区县</option>
+		</select><br>
+		<textarea id="" cols="30" rows="10" placeholder="具体详细地址"></textarea>
+		<button class="btn">提交订单</button><span class="bt_info" style="display:none;">有钱吗？不许买！！！！<a href="index.html">回去</a></span>
+		<div>
+			<a href="cart.html" target="_blank">查看购物车</a>
+		</div>
+		
+	</div>
+	
+	<!-- 尾部 -->
+	<div class="bigfooter"></div>
+</body>
+</html>

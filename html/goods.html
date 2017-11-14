@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/top.css">
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/right_nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/good.css">
+	<script src="../lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="../lib/jquery_plugins/jquery.cookie.js"></script>	
+	<script src="../js/magnifier.js"></script>
+	<script src="../js/goods.js"></script>
+	<script src="../js/common.js"></script>
+
+
+</head>
+<body>
+	<div class="bigheader"></div>
+	<div class="top"></div>
+	<div class="bignav"></div>
+	<!-- 详情 -->
+	<div class="goods_main main">
+		<div class="title">
+			<a href="">粮油调味</a>>
+			<a href="">南北干货</a>
+		</div>
+		<!-- 放大镜 -->
+		<div class="magnifier" id="magnifier1">
+			<div class="big_container">
+			<div class="magnifier-container">
+				<div class="images-cover"></div>
+				<!--当前图片显示容器-->
+				<div class="move-view"></div>
+				<!--跟随鼠标移动的盒子-->
+			</div>
+			<div class="magnifier-line">
+				<ul class="clearfix animation03">
+					<li>
+						<div class="small-img">
+							<img src="../images/goods/1.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="../images/goods/2.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="../images/goods/3.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="small-img">
+							<img src="../images/goods/4.jpg" />
+						</div>
+					</li>
+					<li class="last">
+						<div class="small-img" >
+							<img src="../images/goods/5.jpg" />
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--缩略图-->
+			<div class="magnifier-view"></div>
+
+		</div>
+
+	</div>
+	<!-- 价格、加入购物车 -->
+			<div class="goods_middle cart_main">
+				<input type="hidden" value="0" class="id">
+				<p class="goos_middle_title">山霸王 通江 椴木银耳 干货 特级 65g</p>
+				￥<p class="price">128.00</p>
+				<p class="market_pri"><span>市场价格：</span><del>￥128.00</del></p>
+				<div class="buy_num">
+					<span>购买数量：</span>
+					<input type="text" value="-" class="reduce sma"/>
+					<input type="text" value="1" class="number"/>
+					<input type="text" value="+" class="add sma" />
+					<span>件（库存497件）</span>
+				</div>
+				<div class="buy_box">
+					<a href="javascript:void(0)" class="buy">立即购买</a>
+					<a href="javascript:void(0)" class="add_car"><span class="add_car_icon"></span>加入购物车</a>
+					<div class="car_info" style="display:none; float:right; font-size:14px;">女人就应该买买买<a href="javascript:void(0)"> 确定</a></div>
+				</div>
+				<p>本商品由 山霸王 发货，并提供售后服务</p>
+				<div class="bo_info"><a href=""><span class="go">正</span>正品保障</a><a href=""><span class="seven">7</span>7天退换</a><a href="cart.html" target="_blank">查看购物车</a>
+				</div>
+				
+			</div>
+	</div>
+	<!-- 右侧固定导航条 -->
+	<div class="right_sider">
+	</div>
+	<!-- 尾部 -->
+	<div class="bigfooter"></div>
+	
+	
+</body>
+</html>

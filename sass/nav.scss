@@ -1,0 +1,27 @@
+// 导航
+$red :#cf1e2c;
+.bignav{
+  width: 100%;
+  height: 40px;
+  background: #000;
+  line-height: 40px;
+  ul {
+    .active{
+      background: $red;
+    }
+    li{
+      height: 40px;
+      float: left;
+      padding: 0 30px;
+      cursor: pointer;
+      &:hover{
+            background: $red;
+          }
+      a{
+        font-size: 15px;
+          font-weight: 800;
+          color: #ffffff;   
+      }
+    }
+  }
+}
